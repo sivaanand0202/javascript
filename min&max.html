@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Min & Max</title>
+    </head>
+    <body>
+        <p>The minimum no. is <span id="demo"></span>.</p>
+        <p>The maximum no. is<span id="min"></span></p>
+        <script>
+            var a = [];
+            for(var i=0;i<5;i++)
+            {
+              a.push(parseInt(prompt("Ener any five elements")));
+              console.log(" = = > ", a)
+            }
+            document.getElementById("demo").innerHTML = myArrayMin(a);
+            function myArrayMin(arr) 
+            {
+            return Math.min.apply(null, a);
+            }
+            document.getElementById("min").innerHTML = myArrayMax(a);
+        
+            function myArrayMax(arr) 
+            {
+            return Math.max.apply(null, a);
+            }
+
+        
+            </script>
+    </body>
+</html>

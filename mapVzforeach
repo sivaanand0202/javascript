@@ -1,0 +1,14 @@
+<html>
+<head>
+<title><h1>MAP & Foreach</h1>
+</title>
+<body>
+let arr = ['a', 'b', 'c', 'd'];
+arr.forEach((letter) => {
+    console.log(letter);
+});
+let arr = [1, 2, 3, 4, 5];
+let arr2 = arr.map(num => num * 2).filter(num => num > 5);
+</body>
+</head>
+</html>
